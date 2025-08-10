@@ -1,0 +1,51 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.coverage
+*.coverage
+
+# Build artifacts
+build/
+*.o
+*.ptx
+*.cubin
+*.fatbin
+*.so
+*.a
+
+# Mojo/Pixi environment
+.mojoenv/
+pixi.lock
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Results and logs
+results.csv
+*.log
+*.out
+*.err
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+
+# CUDA profiling
+*.nvprof
+*.nvvp
+*.qdrep
