@@ -1,0 +1,99 @@
+{
+    "benchmarks": [
+        {
+            "kernel": "naive_cpp_gemm",
+            "matrix_size": "1024x1024",
+            "dimensions": {
+                "M": 1024,
+                "N": 1024,
+                "K": 1024
+            },
+            "time_seconds": 1.98748,
+            "flops": 2147483648,
+            "throughput_gflops": 1.08051,
+            "verification": {
+                "first_element": 905410,
+                "last_element": "5.66001e+08"
+            },
+            "timestamp": "2024-12-19",
+            "compiler": "g++",
+            "optimization": "-O2"
+        },
+        {
+            "kernel": "naive_mojo_gemm",
+            "matrix_size": "1024x1024",
+            "dimensions": {
+                "M": 1024,
+                "N": 1024,
+                "K": 1024
+            },
+            "time_seconds": 10.715542043,
+            "flops": 2147483648,
+            "throughput_gflops": 0.20041,
+            "verification": {
+                "first_element": null,
+                "last_element": null
+            },
+            "timestamp": "2024-12-19",
+            "compiler": "mojo",
+            "optimization": "default"
+        },
+        {
+            "kernel": "naive_cpp_gemm_o3",
+            "matrix_size": "1024x1024",
+            "dimensions": {
+                "M": 1024,
+                "N": 1024,
+                "K": 1024
+            },
+            "time_seconds": 2.04473,
+            "flops": 2147483648,
+            "throughput_gflops": 1.05025,
+            "verification": {
+                "first_element": 905410,
+                "last_element": "5.66001e+08"
+            },
+            "timestamp": "2024-12-19",
+            "compiler": "g++",
+            "optimization": "-O3"
+        },
+        {
+            "kernel": "naive_mojo_gemm_o3",
+            "matrix_size": "1024x1024",
+            "dimensions": {
+                "M": 1024,
+                "N": 1024,
+                "K": 1024
+            },
+            "time_seconds": 10.758353280,
+            "flops": 2147483648,
+            "throughput_gflops": 0.19961,
+            "verification": {
+                "first_element": null,
+                "last_element": null
+            },
+            "timestamp": "2024-12-19",
+            "compiler": "mojo",
+            "optimization": "-O3"
+        },
+        {
+            "kernel": "naive_cpp_gemm_default",
+            "matrix_size": "1024x1024",
+            "dimensions": {
+                "M": 1024,
+                "N": 1024,
+                "K": 1024
+            },
+            "time_seconds": 13.2489,
+            "flops": 2147483648,
+            "throughput_gflops": 0.162088,
+            "verification": {
+                "first_element": 905410,
+                "last_element": "5.66001e+08"
+            },
+            "timestamp": "2024-12-19",
+            "compiler": "g++",
+            "optimization": "default"
+        }
+    ]
+}
